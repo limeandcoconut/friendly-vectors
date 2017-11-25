@@ -1,0 +1,30 @@
+{
+  "name": "friendly-vectors",
+  "version": "0.1.0",
+  "description": "A package for 2D and 3D vector math.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/limeandcoconut/friendly-vectors.git"
+  },
+  "keywords": [
+    "vector",
+    "vectors",
+    "collision",
+    "geometry",
+    "math",
+    "2d",
+    "3d"
+  ],
+  "author": "Jacob Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limeandcoconut/friendly-vectors/issues"
+  },
+  "homepage": "https://github.com/limeandcoconut/friendly-vectors#readme"
+}
