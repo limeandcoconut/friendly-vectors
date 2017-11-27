@@ -2,11 +2,15 @@
   "name": "friendly-vectors",
   "version": "0.1.0",
   "description": "A package for 2D and 3D vector math.",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run cowboy-hat",
+    "test": "mocha test --reporter=nyan",
+    "build": "babel src --out-dir dist --source-maps",
+    "prepublish": "npm run build",
+    "cowboy-hat": "node cowboy-hat.js",
+    "coverage": "./node_modules/.bin/nyc ./node_modules/.bin/_mocha test",
+    "jsdoc": "./node_modules/.bin/jsdoc src"
   },
   "repository": {
     "type": "git",
@@ -26,5 +30,21 @@
   "bugs": {
     "url": "https://github.com/limeandcoconut/friendly-vectors/issues"
   },
-  "homepage": "https://github.com/limeandcoconut/friendly-vectors#readme"
+  "homepage": "https://github.com/limeandcoconut/friendly-vectors#readme",
+  "dependencies": {
+    "cowboy-hat": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^4.1.2",
+    "jsdoc": "^3.5.5",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
+    "istanbul": "1.0.0-alpha.2",
+    "tap-nyan": "^1.1.0"
+  }
 }

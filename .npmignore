@@ -1,11 +1,13 @@
+.babelrc
 .ds_store
 .nyc_output
 
 *.log
 npm_debug.*
 
-wip
-dist
+test.js
+
+tests
+src
 coverage
 node_modules
-
