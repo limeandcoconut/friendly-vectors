@@ -24,7 +24,7 @@ class Vector2D {
 
         if (typeof x === 'object') {
             if (Array.isArray(x)) {
-                [x, y] = x
+                [x = 0, y = 0] = x
             } else {
                 ({x = 0, y = 0} = x)
             }
