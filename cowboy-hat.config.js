@@ -1,4 +1,7 @@
 module.exports = {
-    from: '../dist/',
-    to: '../src/',
+    srcDir: './src/',
+    distDir: './dist/',
+    // srcDir: './dist/',
+    // distDir: './src/',
+    forceRewriteCache: true,
 }
