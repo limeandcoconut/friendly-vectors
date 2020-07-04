@@ -2,7 +2,8 @@
 A package for doing 2D and 3D vector math. It provides `Vector2D` and `Vector3D` classes with simple human readable methods.
 
 
-## Example
+## Usage
+
 ```js
 const {Vector2D} = require('friendly-vectors')
 
@@ -18,25 +19,30 @@ console.log(u) // Vector2D { x: 0, y: 1 }
 ## Testing
 Coming soon.
 
-## Feedback ✉️
-
-[messagethesmith@gmail.com](messagethesmith@gmail.com)
-
-[https://github.com/limeandcoconut](https://github.com/limeandcoconut)
-
-[@limeandcoconut](https://twitter.com/limeandcoconut)
-
-Cheers!
-
 ## TODO:
 
 - [ ] Better Description
-- [ ] Docs Site
-- [ ] Tests
+- [ ] Full tests
+- [ ] Switch to Jest?
 - [ ] Usage stats
+- [ ] Clean up Vector3D
 
-## Usage Stats
-Coming soon.
+
+## Feedback ✉️
+
+[Website 🌐](https://jacobsmith.tech)
+
+[js@jacobsmith.tech](mailto:js@jacobsmith.tech)
+
+[https://github.com/limeandcoconut](https://github.com/limeandcoconut)
+
+[@limeandcoconut 🐦](https://twitter.com/limeandcoconut)
+
+Cheers!
+
+## License
+
+ISC, see [license](/license) for details.
 
 ## License
 

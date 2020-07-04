@@ -290,11 +290,11 @@ class Vector2D {
             vectors = vectors[0]
         }
 
-        vectors.forEach((vector, index) => {
+        for (const [vector] of vectors) {
             if (!(vector instanceof Vector2D)) {
-                throw new TypeError(`Argument ${index} is not an instance of Vector2D.`)
+                throw new TypeError(`Argument ${vector} is not an instance of Vector2D.`)
             }
-        })
+        }
 
         return true
     }

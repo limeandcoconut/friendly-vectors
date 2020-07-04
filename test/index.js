@@ -1,7 +1,7 @@
 /* eslint-disable no-new */
 const test = require('ava')
 
-const {Vector2D, Vector3D} = require('../dist/index.js')
+const {Vector2D} = require('../dist/index.js')
 
 test('Vector2D doesn\'t throw when passed nothing.', (t) => {
     t.notThrows(() => {
