@@ -1,11 +1,13 @@
 {
   "name": "friendly-vectors",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A package for 2D and 3D vector math.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Jacob Smith <js@jacobsmith.tech>",
   "license": "ISC",
   "scripts": {
+    "build": "babel src --out-dir dist --source-maps",
+    "prepublish": "npm run build",
     "test": "ava --reporter=nyan",
     "watch": "./node_modules/.bin/ava --watch",
     "coverage": "./node_modules/.bin/nyc  --reporter=lcov ./node_modules/.bin/ava --watch",
@@ -15,6 +17,11 @@
     "type": "git",
     "url": "git+ssh://git@github.com/limeandcoconut/friendly-vectors.git"
   },
+  "browserslist": [
+    "last 2 versions",
+    "not IE > 0",
+    "not IE_Mob > 0"
+  ],
   "keywords": [
     "vector",
     "vectors",
@@ -30,15 +37,19 @@
   "homepage": "https://github.com/limeandcoconut/friendly-vectors#readme",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
     "ava": "^3.9.0",
-    "jsdoc": "^3.6.4",
-    "nyc": "^15.1.0",
-    "tap-nyan": "^1.1.0",
     "eslint": "^7.4.0",
     "eslint-config-limeandcoconut": "^1.3.0",
     "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-unicorn": "^20.1.0",
-    "eslint-plugin-vue": "^6.2.2"
+    "eslint-plugin-vue": "^6.2.2",
+    "jsdoc": "^3.6.4",
+    "nyc": "^15.1.0",
+    "tap-nyan": "^1.1.0"
   },
   "nyc": {},
   "ava": {
