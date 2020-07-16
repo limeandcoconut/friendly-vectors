@@ -290,7 +290,7 @@ class Vector2D {
       vectors = vectors[0]
     }
 
-    for (const [vector] of vectors) {
+    for (const vector of vectors) {
       if (!(vector instanceof Vector2D)) {
         throw new TypeError(`Argument ${vector} is not an instance of Vector2D.`)
       }
