@@ -1,3 +1,5 @@
+# Don't forget .npmignore
+
 .ds_store
 .nyc_output
 

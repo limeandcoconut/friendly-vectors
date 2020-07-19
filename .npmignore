@@ -1,4 +1,5 @@
-.babelrc
+# Don't forget .gitignore
+babel.config.js
 .ds_store
 .nyc_output
 
